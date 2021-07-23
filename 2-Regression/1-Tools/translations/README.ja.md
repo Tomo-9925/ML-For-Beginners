@@ -25,7 +25,7 @@
 
 1. **Pythonのインストール**: [Python](https://www.python.org/downloads/) がコンピュータにインストールされていることを確認してください。Pythonは多くのデータサイエンス、機械学習のタスクで使用します。ほとんどのコンピュータシステムにはPythonがすでにインストールされています。一部のユーザのセットアップを簡単にするために [Python Coding Packs](https://code.visualstudio.com/learn/educators/installers?WT.mc_id=academic-15963-cxa) を利用することもできます。
 
-   しかし、Pythonを使っていると時に異なるバージョンを必要とする場合があります。そのため、[仮想環境](https://docs.python.org/3/library/venv.html) を利用すると便利です。   
+   しかし、Pythonを使っていると時に異なるバージョンを必要とする場合があります。そのため、[仮想環境](https://docs.python.org/3/library/venv.html) を利用すると便利です。
 
 
 2. **Visual Studio Codeのインストール**: Visual Studio Codeがコンピュータにインストールされていることを確認してください。[こちらの手順](https://code.visualstudio.com/) でVisual Studio Codeをインストールしてください。このコースでは、Visual Studio CodeでPythonを使用しますので [Visual Studio Codeの設定](https://docs.microsoft.com/learn/modules/python-install-vscode?WT.mc_id=academic-15963-cxa) をブラッシュアップしておくといいです。
@@ -46,7 +46,7 @@
 
 ### エクササイズ - ノートブックでの作業
 
-フォルダの中に _notebook.ipynb_ というファイルが入っています。 
+フォルダの中に _notebook.ipynb_ というファイルが入っています。
 
 1. Visual Studio Codeで _notebook.ipynb_ を開いてください。
 
@@ -59,7 +59,7 @@
 
 
 3. コードブロックで **print('hello notebook')** と入力してください。
-   
+
 
 4. 矢印を選択するとコードが実行されます。
 
@@ -142,7 +142,7 @@ s1 tc: T細胞（白血球の一種）
     print(X[0])
     ```
 
-   `load_diabetes()` のレスポンスとしてタプルが返ってきます。タプルの2つの値をそれぞれ `X`と` y`に割り当てます。詳しくは、 [タプルについて](https://wikipedia.org/wiki/Tuple) を確認してください。  
+   `load_diabetes()` のレスポンスとしてタプルが返ってきます。タプルの2つの値をそれぞれ `X`と` y`に割り当てます。詳しくは、 [タプルについて](https://wikipedia.org/wiki/Tuple) を確認してください。
 
     このデータは、442個のアイテムで構成されており、一つのアイテムは10個の要素を持つ配列であることがわかります。
 
@@ -153,7 +153,7 @@ s1 tc: T細胞（白血球の一種）
     ```
 
     ✅ データと回帰対象の関係について少し考えてみましょう。線形回帰では、特徴量Xとターゲット変数yの関係を予測します。ドキュメントで、糖尿病データセットの [ターゲット](https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset) を見つけることができますか？そのターゲットを踏まえて、このデータセットは何を示していますか？
-   
+
 
 2. 次に、numpyの`newaxis`関数を使って新しい配列を作成することで、プロットするためのデータセットの一部を選択します。最終的には線形回帰を使用することで、決まったパターンに従って、このデータの値の間に線を生成します。
 
@@ -165,14 +165,14 @@ s1 tc: T細胞（白血球の一種）
 
 
 3. データをプロットする準備ができたので、このデータセットの数字の論理的な分割を機械が判断できるかどうかを確認してみましょう。そのためには、データ(X)とターゲット(y)の両方をトレーニングセットとテストセットに分ける必要があります。Scikit-learnには、これを行うための簡単な方法が用意されています。
-   
+
    ```python
    X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.33)
    ```
 
 
 4. これで、モデルをトレーニングする準備が整いました！線形回帰モデルを読み込み、Xとyのトレーニングセットに `model.fit()` を適用して、モデルの学習を行います。
-   
+
     ```python
     model = linear_model.LinearRegression()
     model.fit(X_train, y_train)
@@ -215,4 +215,4 @@ s1 tc: T細胞（白血球の一種）
 
 ## 課題
 
-[異なるデータセット](assignment.md)
+[異なるデータセット](assignment.ja.md)
